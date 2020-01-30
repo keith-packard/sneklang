@@ -1,9 +1,6 @@
 ## Snek Documentation ##
 
-Reference Manuals:
-
- * [Snek Manual in HTML format](/doc/snek.html)
- * [Snek Manual in PDF format](/doc/snek.pdf)
+Reference Manuals [HTML](/doc/snek.html) [PDF](/doc/snek.pdf)
 
 Snekboard and Lego Lessons:
 

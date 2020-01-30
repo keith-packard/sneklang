@@ -64,10 +64,7 @@ Snek and Lego make a great combination. [Read about how to use them together her
 
 ### Documentation ###
 
-The Snek Manual includes a tutorial and full reference manual. HTML and PDF versions are available here:
-
- * [Snek Manual in HTML format](doc/snek.html)
- * [Snek Manual in PDF format](doc/snek.pdf)
+All of the documentation included in the snek distribution is linked from the [docs](docs) page.
 
 I started documenting snek in my blog, [here is a link to all snek-related blog posts](https://keithp.com/blogs/tags/snek).
 
