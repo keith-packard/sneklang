@@ -50,11 +50,11 @@ There are two snek packages:
 
 ### Snekboard ###
 
-[Snekboard](/snek/snekboard) is a custom embedded computer designed to
+[Snekboard](/snekboard) is a custom embedded computer designed to
 run Snek or [CircuitPython](https://circuitpython.org/). We're
-planning a
+running a
 [Crowd Supply Campaign for Snekboard](https://www.crowdsupply.com/keith-packard/snekboard).
-Please subscribe if you're interested in buying some hardware.
+If you back this project, you can get your very own Snekboard.
 
 [[!img pictures/snek-angle-02_png_project-main.jpg]]
 

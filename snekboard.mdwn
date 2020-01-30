@@ -1,0 +1,60 @@
+## Snekboard ##
+
+[[!img /pictures/snekboard-med.jpg link=/pictures/snekboard.jpg]]
+
+Snekboard is a custom board designed to run Snek with
+[Lego](https://www.lego.com)
+[Power Functions](https://shop.lego.com/category/power-functions)
+motors, servos and switches.
+
+### Packaging ###
+
+Snekboard is 48mm x 48mm, which is the same as six lego studs, so you
+can build a Lego box and slip snekboard right inside.
+
+### Power Supply ###
+
+Snekboard uses a single cell lithium polymer battery for mobile
+operations and can also be powered over USB. It includes a battery
+charger circuit that operates whenever the board is plugged in.
+
+Because Lego Power Function motors are designed to operate from a 9V
+supply, snekboard includes a 4.5A 9V power supply, allowing it to
+operate from a simple single lipo cell instead of requiring multiple
+cells.
+
+### Motor Controllers ###
+
+Snekboard includes four 2.5A DC motor controlers which can drive
+motors and servos. They connect to Power Functions motors using a
+[Micro MaTch](https://www.te.com/usa-en/product-215083-4.html)
+crimp-on connector that attaches to Power Function cables.
+
+### I/O Pins ###
+
+Snekboard has 8 general purpose 3.3V I/O pins. Each is matched with a
+ground and 3.3V power pin to allow them to be connected to sensors or
+3.3V low-current devices. All eight pins can be used in analog or
+digital mode.
+
+### NeoPixels ###
+
+There are two
+[Adafruit NeoPixels](https://www.adafruit.com/category/168)
+devices on the board.
+
+### CircuitPython ###
+
+Snekboard can also run
+[CircuitPython](https://circuitpython.org/),
+for more advanced progamming adventures.
+
+### Design Files ###
+
+Snekboard is released under the [TAPR](https://www.tapr.org)
+[Open Hardware License](https://www.tapr.org/ohl.html), a
+share-alike license designed for hardware.
+
+ * [Snekboard gEDA source file git repository](https://keithp.com/cgit/snekboard.git/)
+ * [Snekboard schematic](/pictures/snekboard-sch.pdf)
+ * [Snekboard PCB artwork](/pictures/snekboard-pcb.pdf)
