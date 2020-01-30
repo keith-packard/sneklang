@@ -1,0 +1,9 @@
+[[!img /pictures/snek.svg size=128x128 alt="Snek!"]]
+
+ * [Home](/)
+ * [Mailing List](https://keithp.com/mailman/listinfo/snek)
+ * [Docs](/docs)
+ * [Download](/dist)
+ * [Git](https://keithp.com/cgit/snek.git)
+ * [Github](https://github.com/keith-packard/snek)
+ * [Issue Tracker](https://github.com/keith-packard/snek/issues)
