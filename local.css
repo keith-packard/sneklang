@@ -1,0 +1,254 @@
+/* local style sheet */
+
+@font-face {
+    font-family: 'Frutiger LT Std 45 Light';
+    src: url('/fonts/FrutigerLTStd-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Std 45 Light';
+    src: url('/fonts/FrutigerLTStd-LightItalic.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Std 45 Light';
+    src: url('/fonts/FrutigerLTStd-Roman.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Std 45 Light';
+    src: url('/fonts/FrutigerLTStd-Italic.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HP Simplified';
+    src: url('/fonts/HPSimplified_Rg.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	font-family: "Frutiger LT Std 45 Light", "sans-serif";
+}
+
+.header, #footer, .changeheader {
+	color: black !important;
+	background-color: white !important;
+}
+
+.header {
+	font-size: 48px !important;
+	font-weight: normal !important;
+}
+
+.header a {
+	color: black !important;
+}
+
+.pageheader .actions ul {
+	border: 0;
+}
+
+#pageinfo {
+	padding: 1px 50px 14px 10px;
+	border-top: 0px solid black;
+}
+
+#backlinks { padding-right: 1ex; font-style: italic; }
+#backlinks a:link {color: black !important; font-style: normal; }
+#backlinks a:visited { color: black !important; }
+
+.pagedate {
+    padding: 0;
+    margin-top: 0;
+    margin: 0;
+}
+
+#footer {
+	background-image: url(/glider-orange.png);
+	background-repeat: no-repeat;
+	background-position: 99%;
+}
+
+#searchform {
+    display: none;
+}
+
+.actions {
+    display: none;
+	text-align: right;
+	background-color: white;
+	color: black !important;
+	padding: 2px 0px;
+}
+
+.actions a {
+	color: black !important;
+}
+
+.actions li {
+	display: inline;
+}
+
+.actions ul {
+	border-bottom: 40px;
+}
+
+a:link {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0px;
+}
+
+.sidebar p {
+    margin: 0px;
+}
+
+.sidebar {
+    width: auto;
+    border: 0px solid black;
+    margin-right: 1em;
+    margin-top: 1em;
+    float: none;
+    padding: 0px;
+}
+
+.sidebar img {
+    width: 128px;
+    height: 160px;
+    margin: 0;
+}
+
+.page {
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+p {
+    overflow: auto;
+}
+
+#pagebody {
+    padding-right: 1em;
+}
+
+@media only screen and (min-width: 670px) and (min-height:420px) { 
+    .sidebar img {
+	width: auto;
+	height: auto;
+    }
+    .sidebar {
+	float: !right;
+	position: fixed;
+	top: 0;
+	right: 0;
+    }
+    #pagebody {
+	margin-right: 205px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (min-height: 470px) { 
+    .page {
+	margin-top: 4em;
+	margin-left: 4em;
+	margin-right: 4em;
+	margin-bottom: 1em;
+    }
+
+    .sidebar {
+	margin-right: 4em;
+	margin-top: 4em;
+    }
+}
+
+.inlineheader {
+	background-image: none !important;
+}
+
+.inlineheader > span.header {
+	border: 1px solid #aaa;
+	border-radius: 8px;
+	font-size: 22px;
+	width: auto;
+	height: auto;
+	float: right;
+	line-height: normal;
+}
+
+.inlineheader > span.header > a {
+	background-image: none !important;
+	text-align: right;
+	width: auto;
+	height: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.inlinepage {
+    border: 0px solid black;
+    border-bottom: 1px solid black;
+    padding: 0px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#content p, #content ul {
+	line-height: 1.5em;
+	color: black;
+	background-color: white;
+}
+
+.blogform {
+    display: none;
+}
+
+body a:link {
+	color: black;
+}
+
+body a:visited {
+	color: black;
+}
+
+h1, h2, h3, h4, h5, h6, dl, dt {
+    font-weight: normal;
+    background-color: inherit;
+    color: black !important;
+    line-height: 1.25em;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+pre {
+        margin: 0px 0px 0px 48px;
+        padding: 12px 12px 12px 12px;
+}
+
+pre, tt, code {
+        font-family: "Bitstream Vera Sans Mono", "Andale Mono", monospace;
+        color: inherit;
+        background-color: #f0f0f0;
+}
+
+#tripit-badge {
+	padding-left: 2em;
+}

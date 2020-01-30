@@ -1,0 +1,98 @@
+## Snek: A Python-inspired Language for Embedded Devices ##
+
+[[!img pictures/snek.svg]]
+
+Snek is a tiny embeddable language targeting processors with only a
+few kB of flash and ram. Think of something that would have been
+running BASIC years ago and you'll have the idea. These processors are
+too small to run [MicroPython](https://micropython.org/).
+
+Snek borrows semantics and syntax from python, but only provides a
+tiny subset of that large language. The goal is to have Snek programs
+able to run in a full Python (version 3) implementation so that any
+knowledge gained in learning Snek will transfer directly to learning
+Python.
+
+### Current Status ###
+
+Snek version 1.3 has been released. This release adds support for
+the ESP32 processor and the µduino board. It is also the first release
+after the continuous integration support, written by Paulo
+Henrique Silva, was enabled in the github repository.
+
+### Releases ###
+
+I've got Snek packaged for generic Linux, Mac OS X and Windows
+machines. All three packages include a snek binary for the host
+operating system to experiment with, binaries for target devices,
+snekde (the Snek Development Environment) and documentation.
+
+[Packages are available in the dist directory here](dist)
+
+### Debian Packages ###
+
+Snek is available in Debian unstable. If you're running Debian stable
+(version 10, aka “Buster”), Snek can be installed from
+[my personal package archive](https://keithp.com/archive).
+Instructions on how to set that up for your machine are available in
+the [README](https://keithp.com/archive/README) in that directory.
+
+There are two snek packages:
+
+ * snek. The main 'snek' package includes source code for use in your
+   own embedded environment, a binary for all supported boards, the
+   'snekde' development environment and documentation.
+
+ * snek-bin. The auxiliary 'snek-bin' package includes a 'snek'
+   application compiled for the host machine, which can be useful to
+   experiment with language features and functions that do not require
+   access to the target hardware.
+
+### Snekboard ###
+
+[Snekboard](/snek/snekboard) is a custom embedded computer designed to
+run Snek or [CircuitPython](https://circuitpython.org/). We're
+planning a
+[Crowd Supply Campaign for Snekboard](https://www.crowdsupply.com/keith-packard/snekboard).
+Please subscribe if you're interested in buying some hardware.
+
+[[!img pictures/snek-angle-02_png_project-main.jpg]]
+
+### Snek and Lego ###
+
+Snek and Lego make a great combination. [Read about how to use them together here](/snek/snek-lego/)
+
+### Documentation ###
+
+The Snek Manual includes a tutorial and full reference manual. HTML and PDF versions are available here:
+
+ * [Snek Manual in HTML format](snek.html)
+ * [Snek Manual in PDF format](snek.pdf)
+
+I started documenting snek in my blog, [here is a link to all snek-related blog posts](https://keithp.com/blogs/tags/snek).
+
+There is also a [Snek mailing list, which you are encouraged to subscribe to](https://keithp.com/mailman/listinfo/snek)
+
+### Source Code ###
+
+You can find Snek in either [my git repository](https://keithp.com/cgit/snek.git) or
+[github](https://github.com/keith-packard/snek)
+
+Snek is licensed under the [GPLv3 (or later)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
+### Snek in NuttX ###
+
+[NuttX](https://nuttx.org/) is a moderate-sized embedded RTOS that
+works on a variety of small systems. I've written the necessary
+glue-code and build instructions to make Snek available there. All of
+that code is licensed under the standard NuttX/BSD license, but
+because NuttX upstream is not willing to take code that references GPL
+code, I've created a [fork of the NuttX app tree in my git repository.](https://keithp.com/cgit/apps.git/).
+
+NuttX has a good mechanism for adding code of this sort; there are no
+changes to existing NuttX files, just a new directory in
+app/interpreters/snek. When present, all of the necessary options
+become visible in the regular NuttX configuration tool.
+
+This port doesn't interface to much of NuttX yet, it would be fun to
+see some experimentation here.
