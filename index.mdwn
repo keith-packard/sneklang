@@ -60,7 +60,7 @@ Please subscribe if you're interested in buying some hardware.
 
 ### Snek and Lego ###
 
-Snek and Lego make a great combination. [Read about how to use them together here](/snek/snek-lego/)
+Snek and Lego make a great combination. [Read about how to use them together here](snek-lego)
 
 ### Documentation ###
 

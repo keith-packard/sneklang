@@ -1,0 +1,224 @@
+## Snek and Lego: Building Robots! ##
+
+[Snek](/snek/) was designed as a language for early programmers for a
+Lego robotics program. Robotics requires four parts:
+
+ 1. Components to construct the robot
+ 2. Actuators to make the robot move
+ 3. Sensors to measure the robots world
+ 4. A computer to hook the sensors to the actuators
+ 5. A programming language to control the robots behavior
+
+Lego forms the first part, and Snek the last. This document describes
+the pieces in between. It will contain links to pieces you can purchase
+and instructions for pieces you can build. If you've got additional
+suggestions, please send them along to the
+[snek mailing list](https://keithp.com/mailman/listinfo/snek) or to me.
+
+### Snek-compatible Computers for Robots ###
+
+For Snek Robotics, we'll need computers which can:
+
+ 1. Run Snek
+ 2. Control motors, lights and other actuators
+ 3. Hook up to switches and other sensors
+ 4. Run from a suitable power supply or batteries
+
+For simple robots, Adafruit makes a great board, the Crickit, which
+does all of these things. For power, you can either get a 5V AC supply
+or a battery pack if you want to go mobile. The Crickit has
+
+ 1. A SAMD21G processor with lots of space for Snek programs
+ 2. Two “H-bridge” motor controls
+ 3. Four high-current outputs
+ 4. A bunch of other analog and digital connections
+ 5. A full-color LED.
+
+With this board, you can build a lot of robots.
+
+### Sensors ###
+
+Snek supports simple digital and analog devices, so our possible sensors are
+a bit limited. With these inputs, Snek can listen to:
+
+ 1. Light sensors
+ 2. Temperature sensors
+ 3. Distance sensors
+ 4. Switches
+
+#### Light Sensors ####
+
+Light sensors are fantastic for detecting the presence or absence of
+an object. I have built both infra red and visible light sensors. The benefit
+of visible light sensors is that you can easily tell what they should
+be doing. Infra red sensors are harder to debug, but can be more
+accurate when you can eliminate other sources of infra red from your
+environment.
+
+My current design for a visible light sensor uses:
+
+ 1. Vishay TEPT5600 photo-transistor (Digikey part 751-1058-ND)
+ 2. 470kΩ resistor (Stackpole CF18JT470K, Digikey part  CF18JT470KCT-ND)
+ 3. 1x4 Lego brick.
+ 4. Stranded connecting wire in Red, Black and Yellow.
+
+Construction:
+
+ 1. Solder a wire to the positive photo-transistor terminal (the longer
+    lead). I use red for this wire.
+
+ 2. Solder a wire and a lead from the resistor to the negative
+    photo-transistor terminal (the shorter lead). I use yellow for this wire.
+
+ 3. Solder a wire to the other end of the resistor. I use black for
+    this wire.
+
+ 4. Drill a 3/16" (4.75mm) hole in one end of the Lego brick. A
+    3/16" hole (4.75mm) is ideal as the photo-transistor fits snugly
+    without getting pressed all the way in. A 5mm hole would fit the
+    photo-transistor exactly, which actually isn't what you want.
+
+ 5. Drill a 1/8" (3mm) hole in the other end of the brick
+
+ 6. Thread all three wires through the 1/8" hole from the inside
+
+ 7. Remove the flange from the bottom of the photo-transistor so that
+    it will fit inside the brick. With the flange, it's just a bit too
+    wide and pushes the sides out. I use either sand paper or a file
+    for this.
+
+ 8. Insert the photo-transistor into the 3/16" hole from the inside
+
+ 9. Tug the wires so they don't poke out the bottom of the brick.
+
+To Use:
+
+ 1. Hook the red wire to the positive power supply terminal
+
+ 2. Hook the black wire to the negative power supply terminal
+
+ 3. Hook the yellow wire to any pin which can work as an analog input.
+
+#### Lego RCX Light Sensors ####
+
+Lego provided light sensors for the old RCX system. These ran at 9V
+and only use two wires. I believe they worked by pulsing power into
+the sensor and then reading back an analog voltage, which you could
+program a computer to manage. Hooking up three wires and using a
+simpler program seems easier to me.
+
+#### Light Sources ####
+
+These provide a reliable light source for the light sensors. Because
+the light sensors can detect visible light, we can use a visible LED
+here. I picked green (mostly because green is Snek's favorite color,
+but also because green is where the photo-transistors are the most
+sensitive). They're built very much like the light sensors, except
+need only two wires instead of three.
+
+ 1. Cree Cree C503B-GCN-CY0C0791 LED (DigiKey part C503B-GCN-CY0C0791-ND)
+ 2. 100Ω resistor (Stackpole CF18JT100R, DigiKey part CF18JT100RCT-ND)
+ 3. 1x4 lego brick
+ 4. Stranded connecting wire in Red and Black
+
+Construction:
+
+ 1. Solder one lead of the 100Ω resistor to the positive LED terminal
+    (the longer lead).
+
+ 2. Solder a wire to the other end of the resistor. I use red for this
+    wire
+
+ 3. Solder a wire to the negative LED terminal (the shorter lead). i
+    use black for this wire
+
+ 4. Drill a 3/16" (4.75mm) hole in one end of the Lego brick. A
+    3/16" hole (4.75mm) is ideal as the LED fits snugly
+    without getting pressed all the way in. A 5mm hole would fit the
+    LED exactly, which actually isn't what you want.
+
+ 5. Drill a 1/8" (3mm) hole in the other end of the brick
+
+ 6. Thread both wires through the 1/8" hole from the inside
+
+ 7. Remove the flange from the bottom of the LED so that
+    it will fit inside the brick. With the flange, it's just a bit too
+    wide and pushes the sides out. I use either sand paper or a file
+    for this.
+
+ 8. Insert the LED into the 3/16" hole from the inside
+
+ 9. Tug the wires so they don't poke out the bottom of the brick.
+
+#### Switches ####
+
+We've used a bunch of Lego RCX switches. You have to convert from Lego
+RCX connectors to whatever hooks to your computer, but that's not
+difficult. Remember that switches need pull-ups or pull-downs to
+generate a good value when the switch is open. Snek sets all digital
+inputs to pull-up to make these work.
+
+Tenka Labs also makes switches that should work, but I haven't played
+with them yet.
+
+Building your own switches should be easy. The trick is to make sure
+they are well attached to the model.
+
+### Actuators ###
+
+#### Motors ####
+
+There's a detailed analysis of a range of Lego 9V motors available at
+[philohome.com](http://www.philohome.com/motors/motorcomp.htm).
+There are also 4.5V motors from long ago; you can see a list of the
+various components at [Brickipedia](https://lego.fandom.com/wiki/4.5V).
+Recently, Tenka Labs has started selling 4V motors under their
+[Circuit Cubes](https://circuitcubes.com/) brand.
+
+I've used both the ancient Lego 4.5V and new Circuit Cubes 4V motors as
+most of the hardware I've got can't drive 9V motors.
+
+The 4.5V Lego motors and some of the 9V Lego motors are
+un-geared. That makes the output run at high speed (the regular 9V
+2838 motor runs at 4100rpm unloaded), but with low torque. Some of the
+older 9V motors have gear-reduction built in to run at around 350rpm,
+which can make models simpler. However, those motors have also been
+less reliable in my experience.
+
+Tenka Labs Circuit Cubes include two 4V motors, one high speed
+(19000rpm), and one low-speed (about 75rpm). I've only experimented
+with the low speed motor and it works quite nicely.
+
+Most models using high speed motors start with a long speed-reduction
+gear chain, which is noisy and inefficient. The lower speed motors
+can make for easier builds, which is why I've only tried the geared
+Tenka Labs motors.
+
+#### Lights #####
+
+We've driven lots of LEDs from various Arduino hardware. Snek can
+drive basic LEDs from any digital port, and the SAMD21 based boards
+can drive NeoPixels too.
+
+### Computers ###
+
+Snek runs on a range of computers; the
+[Snek manual](https://keithp.com/snek/snek.html) is the best place
+to see the current list, but here's some of the more interesting options:
+
+ 1. [Adafruit Crickit](https://www.adafruit.com/product/3343).
+    All-in-one board with motor controllers, high current outputs and
+    a range of input options. Although this board was originally
+    designed to hook to another computer, it's completely operational
+    as a stand-alone Snek device. One issue with this board is that it
+    only runs in a limited voltage range, from about 4V to 5V. This means
+    you need either a 5V power supply, a 3AA battery pack, and you'll want
+    to use motors compatible with this voltage range for best performance.
+
+ 2. [Adafruit Metro M0 Express](https://www.adafruit.com/product/3505).
+    This board is useful if you want to drive other Arduino boards,
+    but need more program space than a regular Arduino board.
+
+You can also use the original Duemilanove Arduino boards, which you
+may well already have sitting around. Those offer less space for
+programs and data, but are still large enough for some fun projects.
