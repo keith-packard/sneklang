@@ -1,4 +1,4 @@
-[[!img /pictures/snek.svg size=128x128 alt="Snek!"]]
+[[!img /pictures/snek-small.svg size=128x128 alt="Snek!"]]
 
  * [Home](/)
  * [Mailing List](https://keithp.com/mailman/listinfo/snek)
