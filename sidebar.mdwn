@@ -2,7 +2,7 @@
 
  * [Home](/)
  * [Mailing List](https://keithp.com/mailman/listinfo/snek)
- * [Docs](/docs)
+ * [Documentation](/docs)
  * [Download](/dist)
  * [Git](https://keithp.com/cgit/snek.git)
  * [Github](https://github.com/keith-packard/snek)
