@@ -106,71 +106,72 @@ a:link {
     text-decoration: underline;
 }
 
-body {
-    margin: 0px;
-}
-
 .sidebar p {
     margin: 0px;
 }
 
 .sidebar {
     width: auto;
-    border: 0px solid black;
+    border: 0;
+    margin-left: 1em;
     margin-right: 1em;
     margin-top: 1em;
-    float: none;
     padding: 0px;
+    float: left;
 }
 
 .sidebar img {
-    width: 128px;
-    height: 160px;
-    margin: 0;
+    display: none;
+}
+
+.sidebar ul {
+    padding-left: 0;
 }
 
 .page {
-    margin-left: 1em;
-    margin-top: 1em;
-    margin-right: 1em;
-    margin-bottom: 1em;
+    margin: 0;
+    max-width: 760px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.page img {
+    max-width: 90%;
+    height: auto;
 }
 
 p {
     overflow: auto;
 }
 
-#pagebody {
-    padding-right: 1em;
-}
-
-@media only screen and (min-width: 670px) and (min-height:420px) { 
-    .sidebar img {
-	width: auto;
-	height: auto;
-    }
+@media only screen and (min-width: 1000px) {
     .sidebar {
-	float: !right;
+	width: 160px;
 	position: fixed;
 	top: 0;
-	right: 0;
+	left: 0;
+	padding-left: 15px;
     }
-    #pagebody {
-	margin-right: 205px;
+    .sidebar img {
+	max-width: 160px;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
     }
-}
-
-@media only screen and (min-width: 768px) and (min-height: 470px) { 
     .page {
-	margin-top: 4em;
-	margin-left: 4em;
-	margin-right: 4em;
-	margin-bottom: 1em;
+	border-left: 1px solid #e0e0e0;
+	margin-top: 0;
+	margin-left: 200px;
+	margin-right: 1em;
+	margin-bottom: 0;
     }
 
     .sidebar {
-	margin-right: 4em;
-	margin-top: 4em;
+	margin-left: 1em;
+	margin-top: 1em;
     }
 }
 
@@ -213,6 +214,10 @@ p {
 
 .blogform {
     display: none;
+}
+
+body {
+    margin: 0px;
 }
 
 body a:link {
