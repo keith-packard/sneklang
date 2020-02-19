@@ -1,0 +1,38 @@
+# CircuitPython on Snekboard
+
+You can download
+[CircuitPython firmware for Snekboard from circuitpython.org](https://circuitpython.org/board/snekboard/).
+
+To install, press the blue reset button twice within about a
+second. This should cause the blue LED to flash quickly and then pulse
+slowly once it is connected to your laptop. It should appear as a new
+device. Copy the firmware file to this device. Once installed,
+Snekboard will restart running CircuitPython. You can use the Mu
+editor to write code and talk to the device.
+
+## Pin Names ##
+
+CircuitPython for Snekboard has custom names for the GPIO pins which are
+related to what they're connected to on the board:
+
+[[!table data="""
+Pin Names | GPIO Pin | Pin Use
+A1, RX	  | PB08     | Regular I/O or serial receive
+A2, TX	  | PB09     | Regular I/O or serial transmit
+A3	  | PA06     | Regular I/O
+A4	  | PA07     | Regular I/O
+A5, SCL   | PA08     | Regular I/O or I²C clock
+A6, SDA   | PA09     | Regular I/O or I²C data
+A7	  | PA10     | Regular I/O
+A8	  | PA11     | Regular I/O
+POWER1	  | PA12     | M1 motor PWM
+DIR1	  | PA16     | M1 motor direction
+POWER2	  | PA13     | M2 motor PWM
+DIR2	  | PA17     | M2 motor direction
+POWER3	  | PA18     | M3 motor PWM
+DIR3	  | PA20     | M3 motor direction
+POWER4	  | PA19     | M4 motor PWM
+DIR4	  | PA21     | M4 motor direction
+NEOPIXEL  | PB11     | Neopixels
+"""]]
+
