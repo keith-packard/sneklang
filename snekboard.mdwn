@@ -52,7 +52,7 @@ devices on the board.
 Snekboard can also run
 [CircuitPython](https://circuitpython.org/),
 for more advanced progamming adventures. Find out more on the
-[CircuitPython for Snekboard](circuitpython-snekboard) page.
+[CircuitPython for Snekboard](/circuitpython-snekboard) page.
 
 ### Design Files ###
 
