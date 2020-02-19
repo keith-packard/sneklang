@@ -1,11 +1,15 @@
 ## Snekboard ##
 
-[[!img /pictures/snekboard-med.jpg link=/pictures/snekboard.jpg]]
+[[!img /pictures/snek-angle-02-small.jpg link=/pictures/snek-angle-02.jpg]]
 
 Snekboard is a custom board designed to run Snek with
 [Lego](https://www.lego.com)
 [Power Functions](https://shop.lego.com/category/power-functions)
 motors, servos and switches.
+
+You can order
+[Snekboard from Crowd Supply.](https://www.crowdsupply.com/keith-packard/snekboard)
+The campaign for Snekboard runs through March 1, 2020
 
 ### Packaging ###
 
