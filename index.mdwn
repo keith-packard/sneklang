@@ -48,6 +48,11 @@ There are two snek packages:
    experiment with language features and functions that do not require
    access to the target hardware.
 
+### Mu Editor ###
+
+[Mu](https://codewith.mu/) is a great development environment for new Snek programmers. Read
+more about [Mu and Snek here](/mu)
+
 ### Snekboard ###
 
 [Snekboard](/snekboard) is a custom embedded computer designed to

@@ -1,0 +1,43 @@
+## Mu Editor ##
+
+The [Mu Editor](https://codewith.mu/) is a simple editor and
+interaction window for Python languages, including Snek and
+CircuitPython. We recommend using it with Snek as it provides an
+integrated environment for exploring the language and connected Snek
+hardware.
+
+For now, Snek support is not upstream, so you'll need to download a
+Snek-compatible version of Mu from here
+
+[Mu packages are available in the dist directory here](dist)
+
+Mu is written in Python, so getting it installed means getting Python
+installed, along with a few other OS-specific pieces and then a pile
+of Python code, which is mostly OS independent. There are a couple of
+options available.
+
+### Installing the '.whl' file ###
+
+If you already have a working [Python3](https://www.python.org)
+installation and just want to add mu to it, you can download the
+latest .whl file and run
+
+	pip install *.whl
+
+### Installing for Windows ###
+
+If you want an all-in-one package with a built-in installer, you can
+download the windows installer exe file suitable for your machine.
+
+ * [mu editor for 32-bit Windows](/dist/mu-editor-32bit.exe)
+ * [mu editor for 64-bit Windows](/dist/mu-editor-64bit.exe)
+
+### Installing for Debian ###
+
+I've also built mu with snek support for Debian systems (and
+derivatives). It should run on either Unstable or Stable (version 10,
+aka “Buster”).  Mu can be installed from
+[my personal package archive](https://keithp.com/archive).
+Instructions on how to set that up for your machine are available in the
+[README](https://keithp.com/archive/README) in that directory. That
+archive also includes the Snek packages for Stable.
