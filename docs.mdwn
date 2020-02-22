@@ -5,8 +5,8 @@ Reference Manuals [HTML](/doc/snek.html) [PDF](/doc/snek.pdf)
 Snekboard and Lego Lessons:
 
  * Lesson 1: Snekboard: Control LEGO Robots with Snek
-   [HTML](/doc/lessons/lesson-1/snekboard.html)
-   [PDF](/doc/lessons/lesson-1/snekboard.pdf)
+   [HTML](/doc/lessons/lesson-1/lesson-1-snekboard.html)
+   [PDF](/doc/lessons/lesson-1/lesson-1-snekboard.pdf)
  * Lesson 2: The Line Bug
-   [HTML](/doc/lessons/lesson-2/line-bug.html)
-   [PDF](/doc/lessons/lesson-2/line-bug.pdf)
+   [HTML](/doc/lessons/lesson-2/lesson-2-line-bug.html)
+   [PDF](/doc/lessons/lesson-2/lesson-2-line-bug.pdf)
