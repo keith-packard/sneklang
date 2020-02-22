@@ -24,6 +24,8 @@ latest .whl file and run
 
 	pip install *.whl
 
+ * [mu editor wheel file](/dist/mu-editor-latest-py3.whl)
+
 ### Installing for Windows ###
 
 If you want an all-in-one package with a built-in installer, you can
