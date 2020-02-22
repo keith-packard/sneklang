@@ -9,7 +9,7 @@ hardware.
 For now, Snek support is not upstream, so you'll need to download a
 Snek-compatible version of Mu from here
 
-[Mu packages are available in the dist directory here](dist)
+[Mu packages are available in the dist directory here](/dist)
 
 Mu is written in Python, so getting it installed means getting Python
 installed, along with a few other OS-specific pieces and then a pile
